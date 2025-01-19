@@ -1,12 +1,12 @@
 package goadd
 
-import goconstraint "golang.org/x/exp/constraints"
+import"golang.org/x/exp/constraints"
 
 type Number interface {
-  goconstraint.Integer | goconstraint.Float
+  constraints.Integer | constraints.Float
 }
 
-// Add takes two integers, a and b, and returns their sum.
+// Add takes two numbers, a and b, and returns their sum.
 // 
 // Parameters:
 //   - a: The first integer.
